@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="0.0" layoutY="-0.42" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/erd_handsim.PNG" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

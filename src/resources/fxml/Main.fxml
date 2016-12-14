@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.controller.Main">
+  <children>
+    <SplitPane dividerPositions="0.033942558746736295" focusTraversable="true" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="23.0" minWidth="-1.0" prefHeight="23.0" prefWidth="1022.0">
+          <children>
+            <MenuBar prefHeight="60.0" prefWidth="1022.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Datei">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#openAdvancedSQL" text="AdvancedSQL" />
+                    <MenuItem mnemonicParsing="false" onAction="#logout" text="Ausloggen" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Bearbeiten">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#resetChart" text="Diagramm zurücksetzen" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hilfe">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="RTFM" />
+                    <MenuItem mnemonicParsing="false" onAction="#openHandbuch" text="Handbuch öffnen..."/>
+                    <MenuItem mnemonicParsing="false" onAction="#openJavaDoc" text="JavaDoc öffnen..."/>
+                    <MenuItem mnemonicParsing="false" text="About GraphSim" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="root">
+          <children>
+            <SplitPane dividerPositions="0.2220039292730845" focusTraversable="true" prefHeight="344.0" prefWidth="598.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <ListView id="predefinedQueries" fx:id="generalVorlagen" prefHeight="733.0" prefWidth="224.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane id="leftSplit" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="leftSplit">
+                  <children>
+                    <SplitPane dividerPositions="0.6730506155950753" focusTraversable="true" orientation="VERTICAL" prefHeight="731.0" prefWidth="789.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                          <children>
+                            <AreaChart fx:id="chart" alternativeColumnFillVisible="false" alternativeRowFillVisible="false" animated="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" legendVisible="false" prefHeight="488.0" prefWidth="787.0" title="" verticalGridLinesVisible="false" verticalZeroLineVisible="false" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <xAxis>
+                                <CategoryAxis side="BOTTOM" />
+                              </xAxis>
+                              <yAxis>
+                                <NumberAxis side="LEFT" />
+                              </yAxis>
+                            </AreaChart>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="787.0">
+                          <children>
+                            <TableView fx:id="resultTable" prefHeight="170.0" prefWidth="787.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                          </children>
+                        </AnchorPane>
+                      </items>
+                    </SplitPane>
+                  </children>
+                  <stylesheets>
+                    <URL value="@../styles/application.css" />
+                  </stylesheets>
+                </AnchorPane>
+              </items>
+              <stylesheets>
+                <URL value="@../styles/application.css" />
+              </stylesheets>
+            </SplitPane>
+          </children>
+          <stylesheets>
+            <URL value="@../styles/application.css" />
+          </stylesheets>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@../styles/application.css" />
+  </stylesheets>
+</AnchorPane>

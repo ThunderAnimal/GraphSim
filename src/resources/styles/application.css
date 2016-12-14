@@ -1,0 +1,73 @@
+
+.button {
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+	-fx-background-color: 
+        #87ceeb,
+        linear-gradient(#aFeeee 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #ccffff 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.button:pressed {
+	-fx-background-color: 
+        #87ceeb,
+        linear-gradient(#ccffff 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #aFeeee 45%, rgba(230,230,230,0) 50%);
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,3) , 3, 0.0 , 0 , 1 );
+}
+
+
+.radio-button {
+	-fx-base: #2F4F4F;
+}
+
+.check-box {
+	-fx-base: #2F4F4F;
+}
+
+.leftSplit{
+	-fx-background-image: url("../images/bg_image.jpg");
+}
+.label {
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #333333;
+}
+
+.list-view {
+	-fx-border-color: black;
+	-fx-border-width: 0.4;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+	-fx-background-color: #48d1cc;
+}
+
+.menu-bar {
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.menu-button:hover {
+	-fx-background-color: 
+        #87ceeb,
+        linear-gradient(#20b2aa 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #48d1cc 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 20;
+}

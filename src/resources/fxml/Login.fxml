@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="content" alignment="CENTER" gridLinesVisible="false" hgap="10.0" minWidth="-1.0" prefHeight="768.0" prefWidth="1024.0" snapToPixel="true" styleClass="root, leftSplit" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.controller.Login">
+  <Text id="welcome-text" text="Welcome to GraphSim" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+  <TextField fx:id="textAreaName" promptText="enter username" text="Dummy204@handsim.de" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+  <Text fx:id="actionInfo" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+  <Label id="LogLabel" minWidth="-Infinity" styleClass="textLabel" text="User Name:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+  <Label id="LogLabel" minWidth="-Infinity" styleClass="textLabel" text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+  <PasswordField fx:id="passwordField" promptText="enter password" text="hallowelt" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+  <HBox id="actionInfo" alignment="BOTTOM_RIGHT" spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+    <ProgressIndicator fx:id="progressIndicator" progress="-1.0" visible="false">
+      <effect>
+        <ColorAdjust brightness="-0.2748091603053435" contrast="0.12213740458015265" hue="1.0" saturation="-1.0" />
+      </effect>
+    </ProgressIndicator>
+    <Button fx:id="signInButton" onAction="#handleSignInButtonAction" text="Sign In" />
+    <Button onAction="#handleExitButtonAction" text="Exit" />
+  </HBox>
+  <Label id="LogLabel" minWidth="-Infinity" styleClass="textLabel" text="Connectivity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+  <Circle fx:id="dot" centerX="0.0" fill="DODGERBLUE" radius="11.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+    <rotationAxis>
+      <Point3D z="1.0" />
+    </rotationAxis>
+  </Circle>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="147.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="160.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="670.0" minWidth="10.0" prefWidth="491.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="670.0" minWidth="10.0" prefWidth="146.0" />
+  </columnConstraints>
+  <padding>
+    <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+  </padding>
+  <rowConstraints>
+    <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+    <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+    <RowConstraints maxHeight="20.0" prefHeight="20.0" />
+    <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+    <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+  </rowConstraints>
+  <stylesheets>
+    <URL value="@../styles/GraphStyle.css" />
+    <URL value="@../styles/application.css" />
+  </stylesheets>
+</GridPane>

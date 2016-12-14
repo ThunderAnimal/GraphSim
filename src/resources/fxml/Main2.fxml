@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.controller.Main">
+  <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="1024.0">
+    <menus>
+      <Menu mnemonicParsing="false" text="File">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Close" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Edit">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Delete" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Help">
+        <items>
+          <MenuItem mnemonicParsing="false" text="About" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Joshi hat über Ostern zu viel Zeit und tobt sich aus (ohne Cage...)">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#openAdvancedSQL" text="AdvancedSQL" />
+        </items>
+      </Menu>
+    </menus>
+  </MenuBar>
+  <ListView layoutX="181.0" layoutY="126.0" prefHeight="399.0" prefWidth="200.0">
+    <stylesheets>
+      <URL value="@../styles/GraphStyle.css" />
+    </stylesheets>
+  </ListView>
+  <ListView layoutX="686.0" layoutY="126.0" prefHeight="399.0" prefWidth="200.0">
+    <stylesheets>
+      <URL value="@../styles/GraphStyle.css" />
+    </stylesheets>
+  </ListView>
+  <Button layoutX="835.0" layoutY="645.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+  <stylesheets>
+    <URL value="@../styles/GraphStyle.css" />
+  </stylesheets>
+</AnchorPane>
